@@ -1,0 +1,15 @@
+version: "3"
+services:
+  xxxx:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+      args:
+        WORKDIR: /xxxx
+    volumes:
+      - .:/xxxx
+      - ${USERPROFILE-~}/.ssh:/home/developer/.ssh
+    image: xxxx-image
+    container_name: xxxx-container
+    tty: true
+    env_file: .env # shellスクリプト内でも環境変数として使用するため
