@@ -13,4 +13,4 @@
   - サービス, イメージ, コンテナ名
     - `docker-compose.yml`: `(service)`, `image`, `container_name`
     - `.devcontainer/devcontainer.json`: `service`
-- 左下の.devcontainerから`reopen in container`で使える（予定）
+- 左下の.devcontainerから`reopen in container`で使える
