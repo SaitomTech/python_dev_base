@@ -9,6 +9,8 @@
   - `WORKDIR` (Docker内の作業ディレクトリ)
     - `.devcontainer/Dockerfile/`
     - `docker-compose.yml`
+    - `.devcontainer/devcontainer.json`: `workspaceFolder`
   - サービス, イメージ, コンテナ名
     - `docker-compose.yml`: `(service)`, `image`, `container_name`
+    - `.devcontainer/devcontainer.json`: `service`
 - 左下の.devcontainerから`reopen in container`で使える（予定）
