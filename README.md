@@ -4,7 +4,7 @@
 
 ## 使い方
 
-- `.env`ファイルを作成 
+- `.env`ファイルを作成
 - `xxxx`に作成予定のサービス名を追加
   - `WORKDIR` (Docker内の作業ディレクトリ)
     - `.devcontainer/Dockerfile/`
