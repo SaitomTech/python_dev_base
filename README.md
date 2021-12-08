@@ -13,4 +13,5 @@
   - サービス, イメージ, コンテナ名
     - `docker-compose.yml`: `(service)`, `image`, `container_name`
     - `.devcontainer/devcontainer.json`: `service`
+- `.devcontainer`の`name`に好きなプロジェクト名を入れる
 - 左下の.devcontainerから`reopen in container`で使える
