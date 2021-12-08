@@ -12,4 +12,4 @@ services:
     image: xxxx-image
     container_name: xxxx-container
     tty: true
-    env_file: .env # shellスクリプト内でも環境変数として使用するため
+    env_file: .env

@@ -6,7 +6,7 @@
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "xxxx",
   "workspaceFolder": "/xxxx",
-  // "postCreateCommand": "pip install -r requirements.txt -r requirements-dev.txt",
+  "postCreateCommand": "pip install -r requirements.txt -r requirements-dev.txt",
   "shutdownAction": "stopCompose",
   "remoteUser": "developer",
   "extensions": [
