@@ -8,7 +8,6 @@ services:
         WORKDIR: /xxxx
     volumes:
       - .:/xxxx
-      - ${USERPROFILE-~}/.ssh:/home/developer/.ssh
     image: xxxx-image
     container_name: xxxx-container
     tty: true

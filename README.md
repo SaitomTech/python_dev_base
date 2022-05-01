@@ -17,8 +17,7 @@
 4. 左下のアイコンから`reopen in container`
 
 ### 追加設定
-#### VScodeのExtensionsの追加方法
-
+- `ssh-add -l` -> `ssh-add ~/.ssh/<key>`
 
 
 ## 参考
