@@ -1,7 +1,7 @@
 [flake8]
 ; https://flake8.pycqa.org/en/2.5.5/config.html
 max-line-length=100
-
+ignore=D100
 ; flake8-quotes
 inline-quotes=double
 multiline-quotes=double
