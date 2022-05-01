@@ -54,6 +54,9 @@ RUN wget --progress=dot:giga https://raw.githubusercontent.com/git/git/master/co
 # Install pip
 RUN pip install --no-cache-dir -U pip
 
+# Add pip installed packages PATH
+ENV PATH $PATH:~/.local/bin/
+
 # restore setting
 ENV DEBIAN_FRONTEND=
 
