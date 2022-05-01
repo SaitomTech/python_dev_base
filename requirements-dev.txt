@@ -1,1 +1,6 @@
+# linter/formatter
+autopep8==1.6.0
 flake8==4.0.1
+flake8-quotes==3.3.1
+flake8-bugbear==22.4.25
+flake8-docstrings==1.6.0

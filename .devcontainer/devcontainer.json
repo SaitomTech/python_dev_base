@@ -1,9 +1,10 @@
 // ref. https://github.com/Microsoft/vscode-remote-try-python
 // ref. https://code.visualstudio.com/docs/remote/create-dev-container
-
 {
   "name": "[Optional] project name here",
-  "dockerComposeFile": ["../docker-compose.yml"],
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
   "service": "xxxx",
   "workspaceFolder": "/xxxx",
   "postCreateCommand": "pip install -r requirements.txt -r requirements-dev.txt",
@@ -11,9 +12,27 @@
   "remoteUser": "developer",
   "extensions": [
     "ms-python.python",
-    "ms-python.vscode-pylance",
   ],
   "settings": {
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+      "--config=.flake8"
+    ],
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+      "--indent-size",
+      "4",
+      "--aggressive",
+      "--max-line-length",
+      "100"
+    ],
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+      80,
+      100
+    ]
   },
 }
