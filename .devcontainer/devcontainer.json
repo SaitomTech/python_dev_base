@@ -13,4 +13,7 @@
     "ms-python.python",
     "ms-python.vscode-pylance",
   ],
+  "settings": {
+    "python.linting.flake8Enabled": true,
+  },
 }
