@@ -1,4 +1,4 @@
-FROM python:3.9.9
+FROM python:3.10.4
 
 ARG WORKDIR=/xxxx
 WORKDIR ${WORKDIR}
