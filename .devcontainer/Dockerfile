@@ -3,14 +3,14 @@ FROM python:3.10.4
 ARG WORKDIR=/xxxx
 WORKDIR ${WORKDIR}
 
-# for apt install to avoid errors caused by launching dialog box
+# Avoid errors in apt install caused by launching dialog box (! This configuration is restored in the end of Dockerfile)
 ENV DEBIAN_FRONTEND=noninteractive
 
-# to avoid hang-up in docker build
+# Avoid hang-up in docker build
 ENV TZ=Asia/Tokyo
 RUN echo $TZ > /etc/timezone
 
-# change default shell (/bin/sh -> /bin/bash)
+# Change default shell (/bin/sh -> /bin/bash)
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN chsh -s /bin/bash
 
@@ -20,7 +20,7 @@ RUN /bin/echo -e "\n\
     Acquire::http::Timeout \"300\";\n\
     Acquire::ftp::Timeout \"300\";" >> /etc/apt/apt.conf.d/99timeout
 
-# Configure apt and install packages
+# Install some packages (sudo, vim, tzdata, less)
 RUN rm -rf /var/lib/apt/lists/* \
     && apt-get update \
     && apt-get upgrade -y \
@@ -51,7 +51,7 @@ RUN wget --progress=dot:giga https://raw.githubusercontent.com/git/git/master/co
     " >>  /home/developer/.bashrc
 
 
-# pip install
+# Install pip
 RUN pip install --no-cache-dir -U pip
 
 # restore setting
